@@ -27,9 +27,9 @@ const server = http.createServer((req, res) => {
                 <!DOCTYPE html>
                 <html>
                     <head>
-                        <title> Lab Exercise 03 </title>
+                        <title> Lab Exercise 03 || COMP 3123 || KAILIE FIELD || 100627702 </title>
                         <style>
-                        body {font-family: courier-new, sans-serif; }
+                        body {font-family: Courier New,Courier,Lucida Sans Typewriter, Lucida Typewriter, monospace; }
                         h1 { color: #2x3e50; }
                         p { font-size: 14px; }
                         </style>
