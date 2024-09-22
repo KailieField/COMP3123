@@ -8,8 +8,8 @@ let employeesModule = [
 ]
 
 // Display to console
-for(const [key, value] of Object.entries(employeesModule)) {console.log(key, "ID: " + value.id + " " + "First Name: " + " " + value.firstName + " " +
-                                                      "Last Name: " + " " + value.lastName + " " + "Email: " + " " + value.email + " " + "Salary: " + " " + value.Salary);}
+for(const [key, value] of Object.entries(employeesModule)) {console.log("Key: " + key, " ID: " + value.id + "\t" + " First Name: " + value.firstName + "\t" +
+                                                      " Last Name: " +  value.lastName + " \t" + " Email: " + value.email + " \t\t" + " Salary: " + value.Salary);}
 
 // Exporting for index.js
 module.exports = employeesModule
