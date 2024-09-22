@@ -12,4 +12,4 @@ for(const [key, value] of Object.entries(employees)) {console.log(key, "ID: " + 
                                                       "Last Name: " + " " + value.lastName + "Email: " + " " + value.email + "Salary: " + " " + value.Salary);}
 
 // Exporting for index.js
-module.exports = employees
+module.exports = employeesModule

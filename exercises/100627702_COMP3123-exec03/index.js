@@ -3,7 +3,7 @@
 var http = require("http");
 
 //TODO - Use Employee Module here
-const employees = require('./Employee');
+const employeesModule = require('./Employee');
 
 console.log("Lab 03 -  NodeJs");
 
@@ -56,7 +56,7 @@ const server = http.createServer((req, res) => {
 
             //TODO - Display all details for employees in JSON format
             res.writeHead(200, {'Content-Type' : 'application/json; charset=utf-8'});
-            res.end(JSON.stringify(employees, null, 2)); //JSON formatting converting Javascript objects into Strings (value, replacer, space)
+            res.end(JSON.stringify(employeesModule, null, 2)); //JSON formatting converting Javascript objects into Strings (value, replacer, space)
             return;
         }
         // if http://127.0.0.1:8081/employee/names
@@ -64,7 +64,7 @@ const server = http.createServer((req, res) => {
 
             //TODO - Display only all employees {first name + lastname} in Ascending order in JSON Array
             //e.g. [ "Ash Lee", "Mac Mohan", "Pritesh Patel"]
-        const employeeDetails = employees
+        const employeeDetails = employeesModule
             .map(employee => `${employee.firstName} ${employee.lastName}`)
             .sort();
         res.writeHead(200, {'Content-Type' : 'application/json; charset=utf-8'});
@@ -77,7 +77,7 @@ const server = http.createServer((req, res) => {
 
             //TODO - Display Sum of all employees salary in given JSON format 
             //e.g. { "total_salary" : 100 }  
-        const total_salary = employees.reduce((acc, employee) => acc + employee.Salary, 0); // reduce(accumulator, employee) 
+        const total_salary = employeesModule.reduce((acc, employee) => acc + employee.Salary, 0); // reduce(accumulator, employee) 
         res.writeHead(200, {'Content-Type' : 'application/json; charset=utf-8'});
         res.end(JSON.stringify({ total_salary }, null, 2)); //JSON formatting converting Javascript objects into Strings (value, replacer, space)
         return;
