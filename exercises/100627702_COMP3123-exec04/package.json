@@ -2,10 +2,10 @@
   "name": "100627702_comp3123-exec04",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "exercises/100627702_COMP3123-exec04/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node exercises/100627702_COMP3123-exec04/index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
